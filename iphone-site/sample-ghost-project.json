@@ -1,0 +1,64 @@
+{
+ "name": "Floating Ghost",
+ "w": 1280,
+ "h": 720,
+ "fps": 12,
+ "bg": "#1e2440",
+ "loop": true,
+ "layers": [
+  {
+   "id": "ghost",
+   "name": "Ghost",
+   "visible": true,
+   "opacity": 1
+  },
+  {
+   "id": "sketch",
+   "name": "Your sketch",
+   "visible": true,
+   "opacity": 1
+  }
+ ],
+ "frames": [
+  {
+   "id": "f1",
+   "hold": 1
+  },
+  {
+   "id": "f2",
+   "hold": 1
+  },
+  {
+   "id": "f3",
+   "hold": 1
+  },
+  {
+   "id": "f4",
+   "hold": 1
+  },
+  {
+   "id": "f5",
+   "hold": 1
+  },
+  {
+   "id": "f6",
+   "hold": 1
+  },
+  {
+   "id": "f7",
+   "hold": 1
+  },
+  {
+   "id": "f8",
+   "hold": 1
+  }
+ ],
+ "notes": "Example: 8 drawings made with Claude's horror cartoon engine (a sheet ghost floating on the Halloween street). Draw on \"Your sketch\", or start your own animation.",
+ "hasBg": true,
+ "hasAudio": false,
+ "audioName": "",
+ "audioOffset": 0,
+ "sample": true,
+ "createdAt": 1792258097185,
+ "updatedAt": 1792258097185
+}

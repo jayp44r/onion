@@ -1,0 +1,12 @@
+/* ONION on iPhone/iPad: fill the screen around the notch and the home bar, no rubber-band page */
+html.ios, html.ios body { overscroll-behavior: none; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; }
+html.ios body { position: fixed; inset: 0; }
+html.ios #app { box-sizing: border-box; padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px); }
+html.ios .sheet { max-height: calc(100vh - 80px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)); }
+html.ios input, html.ios textarea, html.ios select { font-size: max(16px, 1em); }   /* stops Safari zooming in on a text box */
+.a2hs { position: fixed; left: 50%; bottom: calc(14px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); z-index: 9000; width: min(420px, calc(100vw - 24px));
+  display: flex; gap: 12px; align-items: center; padding: 12px 14px; border-radius: 18px; border: 3px solid var(--ink); background: var(--plate); box-shadow: 0 6px 0 var(--ink), var(--glow); color: var(--fg); }
+.a2hs img { width: 46px; height: 46px; border-radius: 12px; flex: none; }
+.a2hs b { font-family: var(--f-display); } .a2hs span { font-size: 13px; color: var(--muted); }
+.a2hs svg { width: 18px; height: 18px; vertical-align: -3px; fill: none; stroke: var(--sky); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.a2hs button { margin-left: auto; flex: none; }
